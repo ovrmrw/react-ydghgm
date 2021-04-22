@@ -30,9 +30,5 @@ export function AppService(props) {
     setState({ ...initialState });
   };
 
-  useEffect(() => {
-    console.log(state.counter);
-  });
-
   return { state, increment, initState };
 }
