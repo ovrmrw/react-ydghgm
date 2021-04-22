@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function App(props) {
-  const { state, increment, initState } = AppService(props);
+  const { state, increment, initState } = useAppService(props);
 
   return (
     <div>
@@ -12,7 +12,7 @@ export default function App(props) {
   );
 }
 
-export function AppService(props) {
+export function useAppService(props) {
   const initialState = {
     counter: 0
   };

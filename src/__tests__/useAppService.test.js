@@ -1,8 +1,8 @@
 import { renderHook, act } from "@testing-library/react-hooks";
-import { AppService } from "../App";
+import { useAppService } from "../App";
 
-test("AppService", () => {
-  const { result } = renderHook(() => AppService());
+test("useAppService", () => {
+  const { result } = renderHook(() => useAppService());
 
   expect(result.current.state).toEqual({ counter: 0 });
 
