@@ -23,7 +23,6 @@ export function useAppService(props) {
       ...state,
       counter: state.counter + 1
     });
-    // setState は非同期処理で、数ミリ秒後に useEffect が発火する。
   };
 
   const initState = () => {
